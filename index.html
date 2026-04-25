@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R&P Developers | High-Performance Digital Growth</title>
+  <meta name="description" content="R&P Developers – Ahmedabad-based agency specialising in custom web development, e-commerce, SEO, and brand identity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo logo-img">
+        <img src="R&P Devlopers.png" alt="R&P Developers" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-nav">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Open for Projects · Ahmedabad, India
+      </div>
+      <h1 class="hero-title">
+        Architecting<br />
+        <span class="gradient-text">High-Performance</span><br />
+        Digital Growth
+      </h1>
+      <p class="hero-sub">
+        Custom Web Development &amp; E-commerce Solutions<br />
+        tailored for modern brands.
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn-primary" id="btn-work">
+          <span>Our Work</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn-outline" id="btn-audit">
+          <span>Get a Free Audit</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="50">0</span><span>+</span><p>Projects Delivered</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="98">0</span><span>%</span><p>Client Satisfaction</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="5">0</span><span>+</span><p>Years Experience</p></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card glass">
+            <div class="about-icon-ring">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Clean Code First</h3>
+            <p>Every line we write is purposeful, scalable, and maintainable.</p>
+          </div>
+          <div class="about-card glass offset">
+            <div class="about-icon-ring indigo">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <h3>Performance Obsessed</h3>
+            <p>Sub-2s load times. 90+ PageSpeed scores. Always.</p>
+          </div>
+          <div class="floating-badge glass">
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-django" title="Django"></i>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-label">Who We Are</div>
+          <h2 class="section-title">Ahmedabad's Boutique<br /><span class="gradient-text">Digital Agency</span></h2>
+          <p class="about-desc">We are R&amp;P Developers — a precision-focused agency based in Ahmedabad, India. We craft bespoke digital experiences that combine <strong>clean code, performance optimisation</strong>, and <strong>UI/UX excellence</strong> to help brands scale online.</p>
+          <p class="about-desc">From full-stack Django applications to conversion-focused e-commerce stores, every project is built with obsessive attention to detail — because your digital presence is your first impression.</p>
+          <div class="about-pills">
+            <span class="pill"><i class="fa-solid fa-check"></i> Django / Python</span>
+            <span class="pill"><i class="fa-solid fa-check"></i> React / Next.js</span>
+            <span class="pill"><i class="fa-solid fa-check"></i> E-commerce</span>
+            <span class="pill"><i class="fa-solid fa-check"></i> SEO & Core Web Vitals</span>
+            <span class="pill"><i class="fa-solid fa-check"></i> UI/UX Design</span>
+            <span class="pill"><i class="fa-solid fa-check"></i> Brand Identity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">Our <span class="gradient-text">Core Services</span></h2>
+        <p class="section-sub">End-to-end digital solutions engineered for impact.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card glass reveal">
+          <div class="service-icon-wrap">
+            <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+          </div>
+          <h3>Custom Web Development</h3>
+          <p>Full-stack Django/Python applications architected for scale, security, and blazing speed. From SaaS platforms to enterprise dashboards.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-circle-dot"></i> Django REST APIs</li>
+            <li><i class="fa-solid fa-circle-dot"></i> React/Next.js Frontends</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Database Architecture</li>
+          </ul>
+          <div class="service-tag">Full-Stack</div>
+        </div>
+
+        <div class="service-card glass reveal">
+          <div class="service-icon-wrap">
+            <div class="service-icon purple"><i class="fa-solid fa-cart-shopping"></i></div>
+          </div>
+          <h3>E-commerce Mastery</h3>
+          <p>Conversion-focused online stores like Nutan Decore — designed to sell. Every pixel and interaction is optimised for maximum revenue.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-circle-dot"></i> Custom Shopify Themes</li>
+            <li><i class="fa-solid fa-circle-dot"></i> WooCommerce Solutions</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Checkout Optimisation</li>
+          </ul>
+          <div class="service-tag">E-commerce</div>
+        </div>
+
+        <div class="service-card glass reveal">
+          <div class="service-icon-wrap">
+            <div class="service-icon green"><i class="fa-solid fa-rocket"></i></div>
+          </div>
+          <h3>SEO & Speed Optimisation</h3>
+          <p>Google PageSpeed 90+ guaranteed. We fix Core Web Vitals, implement technical SEO, and make your site rank where it deserves.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-circle-dot"></i> Core Web Vitals Audit</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Technical SEO</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Image & Code Optimisation</li>
+          </ul>
+          <div class="service-tag">Performance</div>
+        </div>
+
+        <div class="service-card glass reveal">
+          <div class="service-icon-wrap">
+            <div class="service-icon orange"><i class="fa-solid fa-pen-nib"></i></div>
+          </div>
+          <h3>Brand Identity</h3>
+          <p>Logo design, cinematic motion graphics, and visual systems that position your brand as a premium market leader from day one.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-circle-dot"></i> Logo & Brand Systems</li>
+            <li><i class="fa-solid fa-circle-dot"></i> Cinematic Motion Design</li>
+            <li><i class="fa-solid fa-circle-dot"></i> UI/UX Design Systems</li>
+          </ul>
+          <div class="service-tag">Design</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO ========== -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Our Work</div>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-sub">A curated selection of recent builds across industries.</p>
+      </div>
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card glass reveal">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#6366f1 0%,#a78bfa 100%)">
+            <div class="portfolio-overlay">
+              <div class="port-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+            <div class="port-preview-text">Nutan Decore</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Nutan Decore</h3>
+            <p>Premium home-décor e-commerce store with custom product builder and advanced filtering.</p>
+            <div class="tech-tags">
+              <span class="tag">Django</span>
+              <span class="tag">Stripe</span>
+              <span class="tag">React</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card glass reveal">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#0ea5e9 0%,#6366f1 100%)">
+            <div class="portfolio-overlay">
+              <div class="port-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+            <div class="port-preview-text">CabGo</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>CabGo Taxi Booking</h3>
+            <p>Real-time taxi booking platform with driver dashboard, live tracking, and automated fare calculation.</p>
+            <div class="tech-tags">
+              <span class="tag">Django</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Google Maps</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card glass reveal">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#f59e0b 0%,#ef4444 100%)">
+            <div class="portfolio-overlay">
+              <div class="port-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+            <div class="port-preview-text">BrandForge</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>BrandForge Agency</h3>
+            <p>High-conversion marketing agency site with cinematic animations and CMS-powered blog.</p>
+            <div class="tech-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">Framer Motion</span>
+              <span class="tag">Sanity CMS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card glass reveal">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#10b981 0%,#0ea5e9 100%)">
+            <div class="portfolio-overlay">
+              <div class="port-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+            <div class="port-preview-text">MediTrack</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>MediTrack SaaS</h3>
+            <p>Healthcare SaaS platform for patient management, appointment scheduling, and analytics.</p>
+            <div class="tech-tags">
+              <span class="tag">Django REST</span>
+              <span class="tag">React</span>
+              <span class="tag">Recharts</span>
+              <span class="tag">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card glass reveal">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#8b5cf6 0%,#ec4899 100%)">
+            <div class="portfolio-overlay">
+              <div class="port-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+            <div class="port-preview-text">LuxeStay</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>LuxeStay Hotels</h3>
+            <p>Boutique hotel booking site with real-time availability, dynamic pricing, and 3D room previews.</p>
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Three.js</span>
+              <span class="tag">Stripe</span>
+              <span class="tag">Redis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card glass reveal cta-card">
+          <div class="cta-card-inner">
+            <div class="cta-card-icon"><i class="fa-solid fa-plus"></i></div>
+            <h3>Your Project Here</h3>
+            <p>Let's build something extraordinary together.</p>
+            <a href="#contact" class="btn-primary small">Start a Project</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESS ========== -->
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">How We Work</div>
+        <h2 class="section-title">Our <span class="gradient-text">Process</span></h2>
+        <p class="section-sub">A battle-tested framework that delivers results every time.</p>
+      </div>
+      <div class="process-timeline">
+
+        <div class="process-step reveal">
+          <div class="step-number">01</div>
+          <div class="step-connector"></div>
+          <div class="step-content glass">
+            <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3>Discovery</h3>
+            <p>Deep-dive into your business goals, target audience, and competitive landscape. We define the "why" before we touch a single line of code.</p>
+            <div class="step-tags">
+              <span>Research</span><span>Audit</span><span>Goal Setting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="step-number">02</div>
+          <div class="step-connector"></div>
+          <div class="step-content glass">
+            <div class="step-icon"><i class="fa-solid fa-chess"></i></div>
+            <h3>Strategy</h3>
+            <p>Architecture planning, tech stack selection, and wireframing. Every decision is deliberate — mapped to your KPIs and growth targets.</p>
+            <div class="step-tags">
+              <span>Wireframes</span><span>Tech Stack</span><span>Roadmap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="step-number">03</div>
+          <div class="step-connector"></div>
+          <div class="step-content glass">
+            <div class="step-icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3>Development</h3>
+            <p>Pixel-perfect UI, clean backend logic, and rigorous testing. Weekly demos keep you in the loop — no black-box surprises.</p>
+            <div class="step-tags">
+              <span>Agile Sprints</span><span>Code Reviews</span><span>QA Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="step-number">04</div>
+          <div class="step-content glass">
+            <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Deployment</h3>
+            <p>CI/CD pipelines, performance audits, and smooth launch. Post-launch monitoring ensures your site stays fast, secure, and online.</p>
+            <div class="step-tags">
+              <span>CI/CD</span><span>Monitoring</span><span>Support</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Let's Talk</div>
+        <h2 class="section-title">Start Your <span class="gradient-text">Project</span></h2>
+        <p class="section-sub">Tell us about your vision. We'll get back within 24 hours.</p>
+      </div>
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <form class="contact-form glass reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="">Select a service…</option>
+              <option>Custom Web Development</option>
+              <option>E-commerce Store</option>
+              <option>SEO & Speed Optimisation</option>
+              <option>Brand Identity</option>
+              <option>Full Digital Package</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Project Budget</label>
+            <select id="budget" name="budget">
+              <option value="">Select budget range…</option>
+              <option>₹25,000 – ₹50,000</option>
+              <option>₹50,000 – ₹1,00,000</option>
+              <option>₹1,00,000 – ₹3,00,000</option>
+              <option>₹3,00,000+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="5" placeholder="Describe your project, goals, and timeline…" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full" id="submitBtn">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-note"><i class="fa-solid fa-lock"></i> Your information is 100% confidential.</p>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Message sent! We'll reach out within 24 hours.</p>
+          </div>
+        </form>
+
+        <!-- Office Info -->
+        <div class="contact-info reveal">
+          <div class="info-card glass">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Our Office</h4>
+              <p>Ahmedabad, Gujarat, India</p>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email Us</h4>
+              <p>hello@rpdevelopers.in</p>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon–Sat · 9 AM – 7 PM IST</p>
+            </div>
+          </div>
+          <div class="availability-badge glass">
+            <span class="badge-dot pulse"></span>
+            Currently accepting new projects for Q2 2026
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn glass" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn glass" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-btn glass" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn glass" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo logo-img">
+            <img src="R&P Devlopers.png" alt="R&P Developers" class="footer-logo-img" />
+          </a>
+          <p>Architecting high-performance digital growth for modern brands. Based in Ahmedabad, India.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">E-commerce</a></li>
+            <li><a href="#">SEO & Performance</a></li>
+            <li><a href="#">Brand Identity</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 R&amp;P Developers · Ahmedabad, India · All rights reserved.</p>
+        <p>Crafted with <i class="fa-solid fa-heart"></i> &amp; precision</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919876543210?text=Hi%20R%26P%20Developers%2C%20I%27d%20like%20to%20discuss%20a%20project"
+     class="whatsapp-float" id="whatsappBtn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
